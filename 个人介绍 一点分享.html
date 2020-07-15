@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<body bgcolor=" #9DF4F4">
+		<style>
+ul {
+    list-style-type: none;
+    margin:45px 5px ;
+    padding:0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 150px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+</style>
+</head>
+
+<body>
+	    <h3><p id="ymd"></p></h3>
+    <script>
+        var date = new Date()
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate(); 
+        document.getElementById("ymd").innerHTML = y+"-"+m+"-"+d;
+    </script>
+    <script type="text/javascript" src="dtxt1.js"></script>
+	<h1>FQ QQQ QQQQQ</h1>
+	<h4>一起分享点什么吧！</h4>
+	<ul>
+  	<li><a href="个人介绍 主页.html">主页</a></li>
+  	<li><a href="个人介绍 个人介绍.html">个人介绍</a></li>
+  	<li><a href="个人介绍 兴趣爱好.html">兴趣爱好</a></li>
+  	<li><a class="active" href="个人介绍 一点分享.html">一点分享</a></li>
+	</ul>
+	<div align="center"><h3>我的分享</h3>
+		<a href="https://www.bilibili.com/video/BV12p411o7w4" title="SRV">
+		<img src="srv.jpg" width=300px height="200px">
+		</a>
+		<a href="https://www.bilibili.com/video/BV12x411S76B" title="苏打绿">
+		<img src="下载.jpg" width="300px" height="200px">
+		</a>
+		<a href="https://www.bilibili.com/video/BV1SW411Z7jP" title="杭电吉协"><img src="14c5bca1cd11728b7db6018ac2fcc3cec1fd2cc0.jpg" width="300px" height="200px"></a>
+		<br><br>
+	</div>
+	<div align="center">	 
+	<form action="https://" method="post">
+                   <h3>欢迎分享交流</h3>
+                    <textarea name="message" id="doc-vld-ta-2-1"  cols="40" rows="5" placeholder="告诉我你的想法"></textarea><br>
+                
+                        <input type="image" src="u=1396464733,4101105605&fm=26&gp=0.jpg" width=100px onClick="document.form1.submit()">
+                    
+   </form>
+	</div>
+</body>
+</html>
+

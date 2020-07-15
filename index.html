@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<body bgcolor=" #9DF4F4">
+		<style>
+ul {
+    list-style-type: none;
+    margin:45px 5px ;
+    padding:0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 150px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+</style>
+	
+</head>
+	
+
+<body>
+    <h3><p id="ymd"></p></h3>
+    <script>
+        var date = new Date()
+        var y = date.getFullYear();
+        var m = date.getMonth()+1;
+        var d = date.getDate(); 
+        document.getElementById("ymd").innerHTML = y+"-"+m+"-"+d;
+    </script>
+    <script type="text/javascript" src="dtxt1.js"></script>
+	<h1>FQ QQQ QQQQQ</h1>
+	<h4>欢迎来看我的主页！</h4>
+	<ul>
+  	<li><a class="active" href="个人介绍 主页.html">主页</a></li>
+  	<li><a href="个人介绍 个人介绍.html">个人介绍</a></li>
+  	<li><a href="个人介绍 兴趣爱好.html">兴趣爱好</a></li>
+  	<li><a href="个人介绍 一点分享.html">一点分享</a></li>
+	</ul>	
+	<div id="demo" style="overflow:hidden;height:128;width:573;color:#ffffff">
+  <table border="0" align="left" cellpadding="0" cellspacing="0" cellspace="0">
+  <tr>
+    <td height="85" valign="top" id="demo1">
+      <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="#"><img src="mmexport1553878007149.jpg" width="500" height="375" border="0"></a></td>
+            <td><a href="#"><img src="mmexport1558710449327.jpg" width="500" height="375" border="0"></a></td>
+            <td><a href="#"><img src="Wolf.jpg" width="500" height="375" border="0"></a></td>
+			  <td><a href="#"><img src="IMG_0364.JPG" width="500" height="375" border="0"></a></td>
+          
+          </tr>
+        </table>
+    </td>
+    <td id="demo2" valign="top"></td>
+  </tr>
+  </table>
+</div>
+<script>
+var speed=20
+demo2.innerHTML=demo1.innerHTML
+function Marquee(){
+if(demo2.offsetWidth-demo.scrollLeft<=0)
+demo.scrollLeft-=demo1.offsetWidth
+else{
+demo.scrollLeft++
+}
+}
+var MyMar=setInterval(Marquee,speed)
+</script>
+	
+
+	
+</body>
+</html>
